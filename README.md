@@ -1,7 +1,7 @@
                                                             🍦 IceCream Web App
                                                                           
 A full-stack ice cream shop web application with a Angular frontend and a Node.js + Express backend.
-The app includes both a customer-facing website and a powerful admin panel — allowing admins to manage everything including orders, payments, products, and users, all from a secure dashboard.
+The app includes a customer-facing website
 
 📸screenshots:-
 <img width="1352" height="680" alt="image" src="https://github.com/user-attachments/assets/aa604482-9bee-492f-8189-62045f265849" />
@@ -31,13 +31,7 @@ The app includes both a customer-facing website and a powerful admin panel — a
 📱 Fully Responsive – Optimized for all devices (desktop, tablet, mobile).
 
 🧑‍💼 Admin Panel
-🔐 Admin Authentication – Secure login for admins.
-📊 Dashboard Overview – View total sales, active orders, and customers.
-🍧 Manage Menu Items – Add, update, or remove ice cream flavors.
-💰 Order & Payment Control – Monitor all payments and order statuses.
-👥 User Management – Manage registered users and their activity.
-📰 Blog Control – Post and edit blogs directly from the admin panel.
-🗂️ Database Integration – View and manage both MongoDB and MySQL data.
+Admin panel in my MERN Project for getting this check my Repo list
 
 🛠️ Tech Stack
 Layer	Technology
