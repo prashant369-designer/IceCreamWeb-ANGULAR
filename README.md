@@ -12,9 +12,6 @@ The app includes a customer-facing website
 <img width="1347" height="674" alt="image" src="https://github.com/user-attachments/assets/310defee-6246-4bed-a9de-2a2bbdc2c846" />
 <img width="1351" height="682" alt="image" src="https://github.com/user-attachments/assets/739ee1e3-1401-48a7-aa58-a731b342247f" />
 <img width="1350" height="677" alt="image" src="https://github.com/user-attachments/assets/fce1a86b-0d9f-4159-a7a5-262e49919e61" />
-<img width="1350" height="682" alt="image" src="https://github.com/user-attachments/assets/8bef154a-af0c-4a88-b915-013e2e071815" />
-<img width="1352" height="681" alt="image" src="https://github.com/user-attachments/assets/951cb657-7d20-4545-9bcd-e4c0748283c0" />
-<img width="1353" height="673" alt="image" src="https://github.com/user-attachments/assets/188dc1ec-661b-48f9-ae54-34bb54855816" />
 <img width="1351" height="685" alt="image" src="https://github.com/user-attachments/assets/283bedc8-e9fb-4b74-bc3c-082c11fd70ac" />
 
 🚀 Features
