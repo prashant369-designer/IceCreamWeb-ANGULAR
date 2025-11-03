@@ -1,0 +1,211 @@
+/* font */
+
+/* inter */
+@import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
+
+/* roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* dm sans */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* Kalnia */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kalnia:wght@100..700&display=swap');
+
+/* roman */
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Romanesco&display=swap');
+
+@font-face {
+    font-family: Tirelessly Love You;
+    src: url(/Tirelessly\ Love\ You.ttf);
+}
+
+
+/* {
+    font-family: "Roboto", sans-serif;
+    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
+    font-family: "Kalnia", serif;
+} */
+
+/* utility */
+
+:root {
+  --primary: #ed1c27;
+  --primary_hover: #d51923;
+  --text: #555555;
+  --text_light: #999999;
+  --accent: #000000;
+  --border: #e2e0e0;
+  --background: #ffffff;
+  --bg_light: #faf2e7;
+  --white: #ffffff;
+  --highlights: #ff1c6a;
+  --hero-bg-primary-color:  #00d084;
+  --hero-bg-secondary-color: #9b51e0;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body,
+button,
+input,
+textarea{
+    font-family: "DM Sans", sans-serif;
+}
+
+p{
+    font-family: "DM Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: "Kalnia", serif;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* footer section */
+.footer-area{
+    background: var(--accent);
+    height: auto;
+    margin-top: 100px;
+    clip-path: ellipse(100% 100% at 50% 100%);
+}
+
+.footer-text{
+    text-align: center;
+    padding-top: 150px;
+}
+
+.footer-text h3{
+    color: var(--white);
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 1.125em;
+}
+
+.footer-area .form-control {
+    width: 500px;
+    margin: auto;
+    padding: 15px !important;
+    border-radius: 9999px;
+    margin-top: 30px;
+}
+
+.footer-area .form-control:focus{
+    border: 1px solid var(--primary);
+}
+
+.form-btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    background-color: var(--primary);
+    color: var(--white);
+    width: 170px;
+    padding: 15px 20px;
+    border-radius: 9999px;
+    transition: all 0.4s;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 398px;
+}
+
+.form-btn span{
+    display: inline-block;
+    font-size: 17px;
+    letter-spacing: 1px;
+    transition: all 0.4s;
+}
+
+.form-btn:hover span{
+    transform: translateX(-2px);
+}
+
+.form-btn i{
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.form-btn:hover i{
+    order: 4;
+    transform: translateX(2px);
+}
+
+.second-hr{
+    color: #1a1a1a !important;
+}
+
+.contact-us h6{
+    color: var(--white);
+}
+
+.contact-us p{
+    color: var(--text_light);
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.contact-us i{
+    color: var(--text_light);
+    font-size: 17px;
+    padding: 0 20px;
+}
+
+.information{
+    color: var(--white);
+}
+
+.information p{
+    margin-bottom: 6px !important;
+}
+
+.information a{
+    color: var(--text_light);
+    transition: all 0.3s;
+}
+
+.information a:hover{
+    color: var(--primary_hover);
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 30px;
+}
+
+.navbar-brand {
+    margin-right: 0px !important;
+}
+
+.hamburger-icon{
+    width: 60px;
+    height: 60px;
+}
+.primary-btn{
+  background-color: red;
+  color: white;
+}
+.secondary-btn{
+  background-color: white;
+  color: black;
+}
+.discover-btn-1{
+  background-color: red;
+  color: white;
+}

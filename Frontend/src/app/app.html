@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <!-- top nav -->
+  <app-topnav></app-topnav>
+
+  <!-- hero section -->
+  <main class="">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active bg-purple position-relative">
+          <img src="assets/images/rev_home2_01.png" class="img-fluid hero-img-1" alt="" data-aos="fade-right">
+          <img src="assets/images/rev_home2_02.png" class="img-fluid hero-img-2" alt="" data-aos="fade-left">
+          <div class="hero-disc">
+            <p style="color: white;">new flavours of joy</p>
+            <h1 style="color: white;">The Rich Taste Of 100% Pure Milk</h1>
+            <p style="color: white;" class="hero-disc-second-p">Fresh And Tangy, Our Original Cream Cheese Spread
+              Alternative Goes
+              On Easy And Tastes Even Better</p>
+            <a href="#" class="primary-btn"><i class="fa-solid fa-arrow-right btn-icon"></i>Shop Now <i
+                class="fa-solid fa-arrow-right btn-icon-2"></i></a>
+          </div>
+
+          <div class="extra-element">
+            <img src="assets/images/rev_home1_06.png" class="img-fluid element-1" alt="">
+            <img src="assets/images/rev_home2_06.png" class="img-fluid element-2" alt="">
+            <img src="assets/images/rev_home2_05.png" class="img-fluid element-3" alt="">
+            <img src="assets/images/rev_home1_05.png" class="img-fluid element-4" alt="">
+          </div>
+        </div>
+
+
+        <div class="carousel-item bg-green position-relative">
+          <img src="assets/images/rev_home2_03.png" class="img-fluid hero-img-1" alt="">
+          <img src="assets/images/rev_home2_04.png" class="img-fluid hero-img-3" alt="">
+          <div class="hero-disc">
+            <p>new flavours of joy</p>
+            <h1>Delight-Full Happiness</h1>
+            <p class="hero-disc-second-p">Find Your Favorite Product, Including Ones That Meet Your Dietery
+              Requirements</p>
+            <a href="#" class="primary-btn"><i class="fa-solid fa-arrow-right btn-icon"></i>Shop Now <i
+                class="fa-solid fa-arrow-right btn-icon-2"></i></a>
+          </div>
+
+          <div class="extra-element-2">
+            <img src="assets/images/rev_home2_07.png" class="img-fluid element-5" alt="">
+            <img src="assets/images/rev_home2_05.png" class="img-fluid element-6" alt="">
+            <img src="assets/images/rev_home2_08.png" class="img-fluid element-7" alt="">
+            <img src="assets/images/rev_home1_05.png" class="img-fluid element-8" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- first card-section -->
+  <section class="first-card-section">
+    <div class="container-fluid">
+      <div class="row" data-aos="fade-up">
+        <div class="d-flex align-items-center justify-content-center flex-column m-auto" style="width: 1050px;">
+          <img src="assets/images/section-2-img.png" class="img-fluid small-img" alt="">
+          <h2 class="first-section-heading">We’re talking rich, creamy, satisfyingly smooth with a tangy zip
+            in every bite.</h2>
+        </div>
+      </div>
+
+      <section class="row" style="padding-top: 90px;" data-aos="fade-left">
+        <div class="col-lg-3 category-item" *ngFor="let category of categories">
+          <div class="card-outer"
+            [ngStyle]="{'background-color': category.backgroundColor, 'background-image': 'url(' + category.backgroundimage + ')'}">
+
+            <div class="card-img">
+              <img [src]="category.mainimage" class="img-fluid mb-lg-4" alt="{{ category.title }}">
+            </div>
+
+            <div class="card-info d-flex flex-column align-items-center justify-content-center">
+              <p class="category-title" style="color: white; font-size: 25px;" class="mb-0">{{ category.title }}</p>
+              <h3 style="color: white; font-size: 32px;">{{ category.description }}</h3>
+
+              <a href="#" class="secondary-btn">
+                <i class="fa-solid fa-arrow-right btn-icon"></i>
+                {{ category.btn }}
+                <i class="fa-solid fa-arrow-right btn-icon-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- product section -->
+  <section class="product-section">
+    <div class="container">
+      <div class="row" data-aos="fade-down">
+        <div class=" col-lg-6">
+          <h3 class="product-heading">Lebagol’s premium ice cream</h3>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="d-flex">
+            <img src="assets/images/decor-primary.svg" class="img-fluid decor-img" alt="">
+            <div class="d-flex flex-column align-items-baseline ps-5">
+              <p class="product-p">Check out our creamiest, smoothest and most delicious flavors, from
+                classic favorites to original creations. It’s the best ice cream you’ll ever taste!</p>
+              <a href="#" class="btn"><i class="fa-solid fa-arrow-right btn-icon-3"></i>View All Flavours
+                <i class="fa-solid fa-arrow-right btn-icon-4"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row py-5" data-aos="fade-right">
+        <div class="col-lg-3 col-md-4">
+          <div class="product-img position-relative">
+            <img src="assets/images/product_21_1.jpg" class="img-fluid" alt="">
+            <div class="icon-on-img">
+              <i class="fa-regular fa-heart heart" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Add To Wishlist"></i>
+
+              <i class="fa-solid fa-shuffle shuffle" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Compare"></i>
+
+              <i class="fa-regular fa-eye eye" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Quick View"></i>
+
+              <i class="fa-solid fa-bag-shopping bag" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Add To Cart"></i>
+            </div>
+          </div>
+          <div class="rating text-center pt-3">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(5)</span>
+          </div>
+          <div class="product-info d-flex flex-column align-items-center justify-content-center">
+            <a href="#">Cheesecake Ice Cream</a>
+            <p>$14.99</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="product-img position-relative">
+            <img src="assets/images/product_20_1.jpg" class="img-fluid" alt="">
+            <div class="icon-on-img">
+              <i class="fa-regular fa-heart heart" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Add To Wishlist"></i>
+
+              <i class="fa-solid fa-shuffle shuffle" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Compare"></i>
+
+              <i class="fa-regular fa-eye eye" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Quick View"></i>
+
+              <i class="fa-solid fa-bag-shopping bag" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Add To Cart"></i>
+            </div>
+          </div>
+          <div class="rating text-center pt-3">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(5)</span>
+          </div>
+          <div class="product-info d-flex flex-column align-items-center justify-content-center">
+            <a href="#">Klondike Original Ice Cream</a>
+            <p>$14.99</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="product-img position-relative">
+            <img src="assets/images/product_19_1.jpg" class="img-fluid" alt="">
+            <div class="icon-on-img">
+              <i class="fa-regular fa-heart heart" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Add To Wishlist"></i>
+
+              <i class="fa-solid fa-shuffle shuffle" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Compare"></i>
+
+              <i class="fa-regular fa-eye eye" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Quick View"></i>
+
+              <i class="fa-solid fa-bag-shopping bag" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Add To Cart"></i>
+            </div>
+          </div>
+          <div class="rating text-center pt-3">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(5)</span>
+          </div>
+          <div class="product-info d-flex flex-column align-items-center justify-content-center">
+            <a href="#">Chocolate Chip Cookie</a>
+            <p>$14.99</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4">
+          <div class="product-img position-relative">
+            <img src="assets/images/product_18_1.jpg" class="img-fluid" alt="">
+            <div class="icon-on-img">
+              <i class="fa-regular fa-heart heart" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Add To Wishlist"></i>
+
+              <i class="fa-solid fa-shuffle shuffle" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Compare"></i>
+
+              <i class="fa-regular fa-eye eye" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Quick View"></i>
+
+              <i class="fa-solid fa-bag-shopping bag" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Add To Cart"></i>
+            </div>
+          </div>
+          <div class="rating text-center pt-3">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(5)</span>
+          </div>
+          <div class="product-info d-flex flex-column align-items-center justify-content-center">
+            <a href="#">Vanilla Brownie</a>
+            <p>$14.99</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 pt-5">
+          <div class="product-img position-relative">
+            <img src="assets/images/product_16_1.jpg" class="img-fluid" alt="">
+            <div class="icon-on-img">
+              <i class="fa-regular fa-heart heart" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Add To Wishlist"></i>
+
+              <i class="fa-solid fa-shuffle shuffle" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Compare"></i>
+
+              <i class="fa-regular fa-eye eye" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Quick View"></i>
+
+              <i class="fa-solid fa-bag-shopping bag" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Add To Cart"></i>
+            </div>
+          </div>
+          <div class="rating text-center pt-3">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(5)</span>
+          </div>
+          <div class="product-info d-flex flex-column align-items-center justify-content-center">
+            <a href="#">Chocolate Fudge Brownie</a>
+            <p>$14.99</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 pt-5">
+          <div class="product-img position-relative">
+            <img src="assets/images/product_15_1.jpg" class="img-fluid" alt="">
+            <div class="icon-on-img">
+              <i class="fa-regular fa-heart heart" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Add To Wishlist"></i>
+
+              <i class="fa-solid fa-shuffle shuffle" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Compare"></i>
+
+              <i class="fa-regular fa-eye eye" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Quick View"></i>
+
+              <i class="fa-solid fa-bag-shopping bag" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Add To Cart"></i>
+            </div>
+          </div>
+          <div class="rating text-center pt-3">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(5)</span>
+          </div>
+          <div class="product-info d-flex flex-column align-items-center justify-content-center">
+            <a href="#">Pumpkin Cheesecake Ice Cream</a>
+            <p>$14.99</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 pt-5">
+          <div class="product-img position-relative">
+            <img src="assets/images/product_12_1.jpg" class="img-fluid" alt="">
+            <div class="icon-on-img">
+              <i class="fa-regular fa-heart heart" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Add To Wishlist"></i>
+
+              <i class="fa-solid fa-shuffle shuffle" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Compare"></i>
+
+              <i class="fa-regular fa-eye eye" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Quick View"></i>
+
+              <i class="fa-solid fa-bag-shopping bag" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Add To Cart"></i>
+            </div>
+          </div>
+          <div class="rating text-center pt-3">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(5)</span>
+          </div>
+          <div class="product-info d-flex flex-column align-items-center justify-content-center">
+            <a href="#">Fruit Ice Cream</a>
+            <p>$14.99</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 pt-5">
+          <div class="product-img position-relative">
+            <img src="assets/images/product_13_1.jpg" class="img-fluid" alt="">
+            <div class="icon-on-img">
+              <i class="fa-regular fa-heart heart" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Add To Wishlist"></i>
+
+              <i class="fa-solid fa-shuffle shuffle" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Compare"></i>
+
+              <i class="fa-regular fa-eye eye" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Quick View"></i>
+
+              <i class="fa-solid fa-bag-shopping bag" data-bs-toggle="tooltip" data-bs-placement="left"
+                data-bs-title="Add To Cart"></i>
+            </div>
+          </div>
+          <div class="rating text-center pt-3">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(5)</span>
+          </div>
+          <div class="product-info d-flex flex-column align-items-center justify-content-center">
+            <a href="#">Chocolate Fudge Brownie</a>
+            <p>$14.99</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- discover section -->
+  <section class="discover-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6" data-aos="fade-right">
+          <h2 class="discover-heading">Made with only the good stuff</h2>
+          <p class="discover-p" style="color: red;">favorite flavor</p>
+          <p class="text-small">You can have your ice cream and eat it, too! These delicious, classic flavors
+            are big in taste but lower in fat than regular ice cream.</p>
+          <div class="discover-links mt-4">
+            <img src="assets/images/asterisk.svg" alt="">
+            <a href="#">Suger-restricted diet</a>
+          </div>
+          <div class="discover-links">
+            <img src="assets/images/asterisk.svg" alt="">
+            <a href="#">A reducted caloried dessert</a>
+          </div>
+          <div class="discover-links">
+            <img src="assets/images/asterisk.svg" alt="">
+            <a href="#">A reducte fat alternative</a>
+            <p class="text-small mt-2">(as compared to regular ice cream)</p>
+          </div>
+          <div class="discover-btn">
+            <a href="#" class="discover-btn-1"><i class="fa-solid fa-arrow-right btn-icon"></i>Discover Now
+              <i class="fa-solid fa-arrow-right btn-icon-2"></i></a>
+            <a href="#" class="discover-btn-2"> <i class="fa-solid fa-phone-volume"></i> (+91) 123456789</a>
+          </div>
+        </div>
+
+        <div class="col-lg-6 position-relative">
+          <div class="discover-img" data-aos="fade-left">
+            <img src="assets/images/h2_shap.png" class="img-fluid" alt="">
+            <div class="ice-cream-img">
+              <img src="assets/images/h2_img4.png" class="img-fluid ice-cream-img-1" alt="">
+              <img src="assets/images/h2_img5.png" class="img-fluid ice-cream-img-2" alt="">
+            </div>
+          </div>
+          <div class="group-img">
+            <img src="assets/images/h2_img3.png" class="img-fluid group-img-1" alt="">
+            <img src="assets/images/h2_img9.png" class="img-fluid group-img-2" alt="">
+            <img src="assets/images/h2_img10.png" class="img-fluid group-img-3" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flavor of the Week -->
+  <section class="flavor-week position-relative">
+    <div class="flavored-icecream-img d-flex align-items-center justify-content-between">
+      <img src="assets/images/h2_img2.png" class="img-fluid flavored-icecream-img-1" alt="" data-aos="fade-right">
+      <img src="assets/images/h2_img1.png" class="img-fluid flavored-icecream-img-2" alt="" data-aos="fade-left">
+    </div>
+    <div class="flavor-info">
+      <p class="flavor-info-p1" style="color: red;">Flavor of the Week</p>
+      <h2 class="flavor-info-heading" style="color: white;">Shop the sweetes gifts of the season</h2>
+      <p class="flavor-info-p2" style="color: white;">Inspired by strawberry rhubarb pie and reimagined into 5 layer
+        indulgent dessert!
+      </p>
+      <div class="reminder d-flex justify-content-center" style="color: white;">
+        <div class="d-flex flex-column align-items-center">
+          <h2>30:</h2>
+          <p>Days</p>
+        </div>
+        <div class="d-flex flex-column align-items-center">
+          <h2>24:</h2>
+          <p>Hrs</p>
+        </div>
+        <div class="d-flex flex-column align-items-center">
+          <h2>00:</h2>
+          <p>Mins</p>
+        </div>
+        <div class="d-flex flex-column align-items-center">
+          <h2>00</h2>
+          <p>Secs</p>
+        </div>
+      </div>
+
+      <a style="color: white;" href="#" class="explore-btn primary-btn"><i
+          class="fa-solid fa-arrow-right btn-icon"></i>Explore Products <i
+          class="fa-solid fa-arrow-right btn-icon-2"></i></a>
+    </div>
+  </section>
+
+
+  <!-- testimonial section -->
+  <section class="testimonial-section position-relative">
+    <div class="container position-relative">
+      <div class="d-flex align-items-center justify-content-center">
+        <img src="assets/images/testemonial-img.png" class="img-fluid" alt="">
+      </div>
+      <div>
+        <img src="assets/images/decor-primary.svg" class="img-fluid decor-img-1" alt="">
+        <img src="assets/images/decor-primary.svg" class="img-fluid decor-img-2" alt="">
+      </div>
+      <div id="carouselExampleFade" class="carousel slide carousel-slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p class="review-text">This is some of the best ice cream found in India. Everyone in our group
+              loved it. Mango was the bomb dot com. Others likes coco crunch, coco almond. Service was
+              fast. Staff were very friendly. Shop was very clean.</p>
+            <div class="rating text-center mt-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h5 class="reviewer">Sandre Farmer</h5>
+          </div>
+          <div class="carousel-item">
+            <p class="review-text">This is some of the best ice cream found in India. Everyone in our group
+              loved it. Mango was the bomb dot com. Others likes coco crunch, coco almond. Service was
+              fast. Staff were very friendly. Shop was very clean.</p>
+            <div class="rating text-center mt-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h5 class="reviewer">Rengarajan</h5>
+          </div>
+          <div class="carousel-item">
+            <p class="review-text">This is some of the best ice cream found in India. Everyone in our group
+              loved it. Mango was the bomb dot com. Others likes coco crunch, coco almond. Service was
+              fast. Staff were very friendly. Shop was very clean.</p>
+            <div class="rating text-center mt-3">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <h5 class="reviewer">Pradnya P</h5>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div>
+      <img src="assets/images/h2_img8.png" class="img-fluid testimonial-element-1" alt="">
+      <img src="assets/images/h1_deco-1-1.png" class="img-fluid testimonial-element-2" alt="">
+    </div>
+  </section>
+
+  <!-- best deal section -->
+  <section class="best-deal-section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6" style="color: white;">
+          <div class="best-deal">
+            <img src="assets/images/h2_img6.png" class="img-fluid" alt="" data-aos="fade-down">
+            <div class="best-deal-info" data-aos="fade-up">
+              <p class="best-deal-p1">Enjoy our special offer!</p>
+              <h2 class="best-deal-heading">Today best deal</h2>
+              <p class="best-deal-p2">special delicious</p>
+            </div>
+            <div class="d-flex align-items-center gap-5 mt-4 responsive" data-aos="fade-right">
+              <a href="#" class="best-deal-btn primary-btn"><i class="fa-solid fa-arrow-right btn-icon"></i>Shop Now
+                <i class="fa-solid fa-arrow-right btn-icon-2"></i></a>
+              <p class="best-deal-p3 mb-0">In the comfort of your home you can now order your favorite
+                Lebagol ice cream with a click.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" style="color: white;">
+          <div class="best-deal-2">
+            <img src="assets/images/h2_img7.png" class="img-fluid" alt="" data-aos="fade-down">
+            <div class="best-deal-info" data-aos="fade-up">
+              <p class="best-deal-p1">FASTEST DELIVERY</p>
+              <h2 class="best-deal-heading">We door deliver</h2>
+            </div>
+            <div class="d-flex align-items-center gap-4 mt-4 responsive" data-aos="fade-right">
+              <i class="fa-solid fa-phone-volume call-icon"></i>
+              <div class="d-flex flex-column">
+                <p class="mb-0">For Home Delivery</p>
+                <p class="fs-4 mb-0">(+91) 123456789</p>
+              </div>
+
+              <div>
+                <p>Delivery time slots:</p>
+                <p>11:30 - 1:30 / 3:30 - 5:30 / 7:30 - 9:30</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- marquee -->
+  <marquee style="color: red;">
+    <img src="assets/images/asterisk.svg" class="img-fluid" alt="">
+    <span class="">do-good</span>
+    <img src="assets/images/asterisk.svg" class="img-fluid" alt="">
+    <span class="">taste-good</span>
+    <img src="assets/images/asterisk.svg" class="img-fluid" alt="">
+    <span class="">feel-good</span>
+    <img src="assets/images/asterisk.svg" class="img-fluid" alt="">
+    <span class="">ice-cream</span>
+  </marquee>
+  <hr>
+
+  <!-- outlet section -->
+  <section class="outlet-section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="outlet-1">
+            <p class="outlet-p1" style="color: red;">openings</p>
+            <h2 class="outlet-heading">Hello Chloe's Soft</h2>
+            <p class="outlet-p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation</p>
+            <img src="assets/images/h2_image1.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="outlet-1">
+            <p class="outlet-p1" style="color: red;">openings</p>
+            <h2 class="outlet-heading">Discover Ice wave</h2>
+            <p class="outlet-p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation</p>
+            <img src="assets/images/h2_image3.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="outlet-1">
+            <p class="outlet-p1" style="color: red;">openings</p>
+            <h2 class="outlet-heading">We arrived at Kosmidis</h2>
+            <p class="outlet-p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation</p>
+            <img src="assets/images/h2_image2.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+
+  <!-- Our services section -->
+  <section class="services-section">
+    <div class="container">
+      <div class="row">
+        <div class="outer">
+          <div class="inner">
+            <img src="assets/images/strawberry-svgrepo-com.svg" class="img-fluid small-img" alt="">
+            <h3>Handcrafted</h3>
+            <p>Premium ice cream & cookies</p>
+          </div>
+
+          <div class="inner">
+            <img src="assets/images/ice-cream-svgrepo-com.svg" class="img-fluid small-img" alt="">
+            <h3>personalized</h3>
+            <p>Memorable gifting made easy</p>
+          </div>
+
+          <div class="inner">
+            <img src="assets/images/truck-svgrepo-com.svg" class="img-fluid small-img" alt="">
+            <h3>fast shipping</h3>
+            <p>Nationwide for easy</p>
+          </div>
+
+          <div class="inner">
+            <img src="assets/images/ice-cream-summer-svgrepo-com.svg" class="img-fluid small-img" alt="">
+            <h3>guaranted</h3>
+            <p>A+ customer service</p>
+          </div>
+
+          <div class="inner">
+            <img src="assets/images/ice-cream-svgrepo-com copy.svg" class="img-fluid small-img" alt="">
+            <h3>women owned</h3>
+            <p>Frozen delivery</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer area -->
+  <app-footer></app-footer>
+</body>
+
+</html>
+<router-outlet />

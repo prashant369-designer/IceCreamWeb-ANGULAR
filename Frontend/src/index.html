@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lebagolice</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+
+    <!-- aos library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+</head>
+<body>
+  <app-root></app-root>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="assets/bootstrap/bootstrap.min.js"></script>
+
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/a71f8d3371.js" crossorigin="anonymous"></script>
+
+    <!-- custom js -->
+    <script src="assets/js/script.js"></script>
+
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+
+    <script>
+        AOS.init({
+            duration: 3000,
+            easing: 'liner',
+            offset: 250,
+            disable: false
+        });
+    </script>
+</body>
+</html>

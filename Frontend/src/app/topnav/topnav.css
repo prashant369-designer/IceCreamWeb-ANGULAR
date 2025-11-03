@@ -1,0 +1,391 @@
+/* font */
+
+/* inter */
+@import url('https://fonts.googleapis.com/css2?family=Inder&display=swap');
+
+/* roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* dm sans */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* Kalnia */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kalnia:wght@100..700&display=swap');
+
+/* roman */
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Romanesco&display=swap');
+
+@font-face {
+    font-family: Tirelessly Love You;
+    src: url(/Tirelessly\ Love\ You.ttf);
+}
+
+
+/* {
+    font-family: "Roboto", sans-serif;
+    font-family: "DM Sans", sans-serif;
+    font-family: "Inter", sans-serif;
+    font-family: "Kalnia", serif;
+} */
+
+/* utility */
+
+:root {
+  --primary: #ed1c27;
+  --primary_hover: #d51923;
+  --text: #555555;
+  --text_light: #999999;
+  --accent: #000000;
+  --border: #e2e0e0;
+  --background: #ffffff;
+  --bg_light: #faf2e7;
+  --white: #ffffff;
+  --highlights: #ff1c6a;
+  --hero-bg-primary-color:  #00d084;
+  --hero-bg-secondary-color: #9b51e0;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body,
+button,
+input,
+textarea{
+    font-family: "DM Sans", sans-serif;
+}
+
+p{
+    font-family: "DM Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: "Kalnia", serif;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+#topNav{
+    background-color: var(--accent);
+    height: 45px;
+}
+
+.top-nav i, p, span{
+    color: var(--white);
+}
+
+.social-icons i{
+    font-size: 14px;
+    padding: 0px 16px;
+    transition: all 0.3s;
+    transform: scale(1);
+}
+
+.social-icons i:hover{
+    color: var(--primary_hover);
+    transform: scale(0.9);
+}
+
+.topnav-p p{
+    font-size: 14px;
+}
+
+.global-icon i, span{
+    font-size: 13px;
+}
+
+.global-icon i{
+    line-height: 0 !important;
+}
+
+.global-flag, .global-currency{
+    cursor: pointer;
+}
+
+.flag-img-outer{
+    position: absolute;
+    top: 40px;
+    left: -60px;
+    width: 130px;
+    height: auto;
+    padding-block: 8px;
+    background-color: var(--background);
+    border: 1px solid #ddd;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    z-index: 1;
+}
+
+.flag-img-outer img{
+    width: 25px;
+    height: 15px;
+    object-fit: cover;
+}
+
+.flag-img-outer span{
+    color: var(--accent);
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.requires{
+    font-size: 13px !important;
+    font-weight: normal !important;
+}
+
+.flag-img-inner{
+    padding: 4px 10px;
+}
+
+.flag-img-inner:hover{
+    background-color: #e2e0e0;
+}
+
+.global-flag:hover .flag-img-outer{
+    opacity: 1;
+    visibility: visible;
+    right: 30px;
+}
+
+.global-currency:hover .flag-img-outer{
+    opacity: 1;
+    visibility: visible;
+}
+
+.fa-indian-rupee-sign{
+    color: var(--accent) !important;
+}
+
+nav{
+    background-color: var(--background);
+    height: 80px;
+}
+
+.nav-p p{
+    color: var(--text_light);
+    font-size: 14px;
+}
+
+.nav-p a{
+    color: var(--primary);
+    font-size: 15px;
+}
+
+.nav-link {
+    color: var(--accent) !important;
+    padding-inline: 20px !important;
+}
+
+.nav-item a{
+    position: relative;
+}
+
+.nav-link::after{
+    content: '';
+    position: absolute;
+    background-color: var(--highlights);
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: 8px;
+    transition: all 0.4s;
+}
+
+.nav-link:hover::after{
+    width: 100%;
+}
+
+.navbar-icons i{
+    font-size: 20px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.navbar-icons i:hover{
+    color: var(--primary_hover);
+    transform: rotate(360deg);
+}
+
+.metapos-logo{
+    width: 185px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.bg-purple{
+    background: #8b7ce1;
+    height: 900px;
+    clip-path: ellipse(100% 90% at 50% 10%);
+}
+
+.bg-purple > img{
+    width: 350px;
+    height: 600px;
+}
+
+.bg-green{
+    background: #64a55f;
+    height: 900px;
+    clip-path: ellipse(100% 90% at 50% 10%);
+}
+
+.hero-img-3{
+   width: 650px;
+   height: 800px;
+}
+
+.hero-img-1{
+    position: absolute;
+    left: 80px;
+    top: 150px;
+}
+
+.hero-img-2{
+    position: absolute;
+    right: 70px;
+    top: 150px;
+}
+
+.hero-disc{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 750px;
+    padding-block: 14px;
+}
+
+.hero-disc p:nth-child(1){
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.hero-disc h1{
+    color: var(--white);
+    font-size: 80px;
+}
+
+.hero-disc-second-p{
+    letter-spacing: 1.5px;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.primary-btn{
+    background-color: var(--primary);
+    color: var(--white);
+    width: 170px;
+    text-align: center;
+    padding: 18px 16px;
+    margin-top: 20px;
+    border-radius: 9999px;
+    transition: all 0.4s;
+}
+
+.primary-btn:hover span{
+    transform: translateX(-8px);
+}
+
+.primary-btn:hover .btn-icon{
+    order: 2;
+    transform: translateX(6px);
+}
+
+.btn-icon{
+    opacity: 1;
+    margin-right: 8px;
+    transition: all 0.4s;
+}
+
+.btn-icon-2{
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.primary-btn:hover .btn-icon-2{
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+.primary-btn:hover .btn-icon{
+    opacity: 0;
+}
+
+.primary-btn:hover{
+    letter-spacing: 1.2px;
+}
+
+.element-1{
+    position: absolute;
+    top: 60px;
+    left: -47px;
+}
+
+.element-3{
+    position: absolute;
+    top: 70px;
+    right: 14px;
+}
+
+.element-2{
+    position: absolute;
+    bottom: 170px;
+    left: 450px;
+}
+
+.element-4{
+    position: absolute;
+    bottom: 170px;
+    right: 400px;
+}
+
+.hero-img-3{
+    position: absolute;
+    right: -110px;
+    bottom:36px;
+}
+
+.element-5{
+    position: absolute;
+    top: 50px;
+    left: 40px  ;
+}
+
+.element-6{
+    position: absolute;
+    top: 50px;
+    right: 30px  ;
+}
+
+.element-7{
+    position: absolute;
+    bottom: 100px;
+    left: 300px  ;
+}
+
+.element-8{
+    position: absolute;
+    bottom: 200px;
+    right: 400px;
+}
+
+.small-img{
+    width: 180px;
+    height: 195px;
+    object-fit: cover;
+    margin: auto;
+}
